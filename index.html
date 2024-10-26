@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica 02</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('https://img.freepik.com/vector-premium/ilustracion-vectorial-fondo-abstracta-elegante-bg-gradiente-bg_784842-4620.jpg?semt=ais_hybrid'); background-size: cover; background-position: center;">
+  <div class="game-container">
+    <h1>Tic Tac Toe</h1>
+    <div id="board">
+      <div class="celda" data-index="0"></div>
+      <div class="celda" data-index="1"></div>
+      <div class="celda" data-index="2"></div>
+      <div class="celda" data-index="3"></div>
+      <div class="celda" data-index="4"></div>
+      <div class="celda" data-index="5"></div>
+      <div class="celda" data-index="6"></div>
+      <div class="celda" data-index="7"></div>
+      <div class="celda" data-index="8"></div>
+    </div>
+    <button id="reiniciar_juego">Volver a jugar</button>
+    <div id="puntos">
+      <h2>Registro de los Mejores Tiempos</h2>
+      <table id="mejores_puntos">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Tiempo</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

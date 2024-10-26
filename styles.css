@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.game-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.celda {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 2px solid #333;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.celda:hover {
+  background: #e1e1e1;
+}
+
+#reiniciar_juego {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#mejores_puntos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+#mejores_puntos th, #mejores_puntos td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: left;
+}
+
+#mejores_puntos th {
+  background-color: #f2f2f2;
+}
+
+#mejores_puntos tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#mejores_puntos tr:hover {
+  background-color: #d1e7dd;
+}
+
+h1 {
+  color: #b8860b; /* Color amarillo oscuro */
+}
+
+#puntos h2 {
+  color: #b8860b; /* Color amarillo oscuro */
+}
